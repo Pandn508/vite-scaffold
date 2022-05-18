@@ -1,6 +1,4 @@
-const {
-  defineConfig
-} = reuqire('eslint-define-config')
+const { defineConfig } = require('eslint-define-config')
 
 module.exports = defineConfig({
   root: true,
@@ -65,7 +63,7 @@ module.exports = defineConfig({
       {
         vars: 'all',
         args: 'after-used',
-        ignoreRestSiblings: false
+        ignoreRestSiblings: false,
       },
     ],
     'vue/html-indent': 'off',
@@ -81,9 +79,12 @@ module.exports = defineConfig({
       },
     ],
     // 强制使用驼峰
-    camelcase: ['error', {
-      properties: 'always'
-    }],
+    camelcase: [
+      'error',
+      {
+        properties: 'always',
+      },
+    ],
     // 优先使用 const
     'prefer-const': [
       'error',
